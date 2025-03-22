@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="96">
+    <author>Jos</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Farm Pallet Shop</en>
+        <de>Hof Paletten Händler</de>
+    </title>
+    <description>
+        <en><![CDATA[Place this minimal pallet shop in your farmyard to buy pallets directly at your farm.
+The shop can be configured in 3 sizes: small, standard, and large.
+
+If you are using a mod like Liftable Pallets and Bales, it will spawn the liftable pallets.
+
+Farm Pallet Shop
+Category: Tools
+Price: $5000
+Upkeep: $0
+Configurations: Size
+
+Farm Pallet Shop (Free pallets)
+Category: Tools
+Price: $5000
+Upkeep: $0
+Configurations: Size
+]]>
+        </en>
+        <de><![CDATA[Platziere diesen kleinen Palettenhändler auf deinem Hof, um Paletten direkt auf deinem Hof zu kaufen.
+Der Händler kann in 3 Größen konfiguriert werden: klein, Standard und groß.
+
+Wenn du einen Mod wie "Liftable Pallets and Bales" verwendest, wird er die liftbaren Paletten spawnen.
+
+Hof Paletten Händler
+Shopkategorie: Geräte
+Preis: 5.000€
+Unterhaltskosten: 0€
+Konfigurationen: Größe
+
+Hof Paletten Händler (kostenlose Paletten)
+Shopkategorie: Geräte
+Preis: 5.000€
+Unterhaltskosten: 0€
+Konfigurationen: Größe
+]]>
+        </de>
+    </description>
+    <iconFilename>icon_FarmPalletShop.dds</iconFilename>
+    <multiplayer supported="true"/>
+    <l10n filenamePrefix="l10n/l10n"/>
+    <storeItems>
+        <storeItem xmlFilename="xml/palletWarehouse.xml"/>
+        <storeItem xmlFilename="xml/palletWarehouseFree.xml"/>
+    </storeItems>
+</modDesc>

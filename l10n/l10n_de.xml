@@ -1,0 +1,9 @@
+<l10n>
+    <elements>
+        <e k="shopItem_farmPalletShop" v="Hof-Palettenhändler" />
+        <e k="shopItem_farmPalletShop_free" v="Hof-Palettenhändler (kostenlos)" />
+        <e k="function_farmPalletShop" v="Kauf deine Paletten direkt auf deinem Hof." />
+        <e k="function_farmPalletShop_free" v="Kauf deine Paletten direkt auf deinem Hof zum Nulltarif." />
+        <e k="configuration_size" v="Größe" />
+    </elements>
+</l10n>

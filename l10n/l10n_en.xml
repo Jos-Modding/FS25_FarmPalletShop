@@ -1,0 +1,9 @@
+<l10n>
+    <elements>
+        <e k="shopItem_farmPalletShop" v="Farm Pallet Shop" />
+        <e k="shopItem_farmPalletShop_free" v="Farm Pallet Shop (free)" />
+        <e k="function_farmPalletShop" v="Buy pallets directly at your farm yard." />
+        <e k="function_farmPalletShop_free" v="Buy pallets directly at your farm yard at zero cost." />
+        <e k="configuration_size" v="Size" />
+    </elements>
+</l10n>

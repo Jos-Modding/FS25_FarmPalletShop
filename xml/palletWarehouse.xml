@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="warehouse" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_farmPalletShop</name>
+        <functions>
+            <function>$l10n_function_farmPalletShop</function>
+        </functions>
+        <image>$data/placeables/brandless/beeHives/beeHivePalletSpawner/store_beeHivePalletSpawner.dds</image>
+        <price>5000</price>
+        <showInStore>true</showInStore>
+        <canBeSold>true</canBeSold>
+        <lifetime>1000</lifetime>
+        <dailyUpkeep>0</dailyUpkeep>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>placeableMisc</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>tools</tab>
+        </brush>
+    </storeData>
+
+    <base>
+        <filename>i3d/farmPalletShop.i3d</filename>
+        <boughtWithFarmland>true</boughtWithFarmland>
+        <canBeRenamed>true</canBeRenamed>
+        <canBeDeleted>true</canBeDeleted>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true">
+        <testAreas>
+            <testArea startNode="testAreaStart01" endNode="testAreaEnd01" />
+        </testAreas>
+
+        <sounds>
+            <place template="smallImp"/>
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="1" maxSlope="75" maxEdgeAngle="30" >
+        <levelAreas>
+            <levelArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01"/>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01"/>
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01"/>
+        </updateAreas>
+    </ai>
+
+    <hotspots>
+        <hotspot type="SHOP" linkNode="palletBuyingActivationTrigger" teleportNode="palletBuyingActivationTriggerMarker"/>
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="palletBuyingActivationTriggerMarker" filename="$data/shared/assets/marker/markerIconShopping.i3d" adjustToGround="true"/>
+    </triggerMarkers>
+
+    <palletBuyingStation triggerNode="palletBuyingActivationTrigger">
+        <fillType name="WHEAT" priceScale="1"/>
+        <fillType name="BARLEY" priceScale="1"/>
+        <fillType name="OAT" priceScale="1"/>
+        <fillType name="POTATO" priceScale="1"/>
+        <fillType name="SUGARCANE" priceScale="1"/>
+        <fillType name="ROADSALT" priceScale="1"/>
+        <fillType name="SEEDS" priceScale="1"/>
+        <fillType name="FERTILIZER" priceScale="1"/>
+        <fillType name="LIQUIDFERTILIZER" priceScale="1"/>
+        <fillType name="LIME" priceScale="1"/>
+        <fillType name="HERBICIDE" priceScale="1"/>
+        <fillType name="SILAGE_ADDITIVE" priceScale="1"/>
+        <fillType name="MINERAL_FEED" priceScale="1"/>
+        <fillType name="BOARDS" priceScale="1"/>
+        <fillType name="PLANKS" priceScale="1"/>
+        <fillType name="PREFABWALL" priceScale="1"/>
+        <fillType name="WOODBEAM" priceScale="1"/>
+        <fillType name="FABRIC" priceScale="1"/>
+        <fillType name="CLOTHES" priceScale="1"/>
+        <fillType name="CEMENT" priceScale="1"/>
+        <fillType name="BARREL" priceScale="1"/>
+        <fillType name="BUCKET" priceScale="1"/>
+        <fillType name="BATHTUB" priceScale="1"/>
+        <fillType name="FURNITURE" priceScale="1"/>
+        <fillType name="CARTONROLL" priceScale="1"/>
+        <fillType name="PAPERROLL" priceScale="1"/>
+        <fillType name="WOOL" priceScale="1"/>
+        <fillType name="EGG" priceScale="1"/>
+        <fillType name="HONEY" priceScale="1"/>
+        <fillType name="FLOUR" priceScale="1"/>
+        <fillType name="RICEFLOUR" priceScale="1"/>
+        <fillType name="BREAD" priceScale="1"/>
+        <fillType name="CAKE" priceScale="1"/>
+        <fillType name="BUTTER" priceScale="1"/>
+        <fillType name="CHEESE" priceScale="1"/>
+        <fillType name="SUGAR" priceScale="1"/>
+        <fillType name="CEREAL" priceScale="1"/>
+        <fillType name="SUNFLOWER_OIL" priceScale="1"/>
+        <fillType name="CANOLA_OIL" priceScale="1"/>
+        <fillType name="OLIVE_OIL" priceScale="1"/>
+        <fillType name="RICE_OIL" priceScale="1"/>
+        <fillType name="RAISINS" priceScale="1"/>
+        <fillType name="GRAPEJUICE" priceScale="1"/>
+        <fillType name="CHOCOLATE" priceScale="1"/>
+        <fillType name="STRAWBERRY" priceScale="1"/>
+        <fillType name="LETTUCE" priceScale="1"/>
+        <fillType name="TOMATO" priceScale="1"/>
+        <fillType name="SPRING_ONION" priceScale="1"/>
+        <fillType name="NAPACABBAGE" priceScale="1"/>
+        <fillType name="CHILLI" priceScale="1"/>
+        <fillType name="GARLIC" priceScale="1"/>
+        <fillType name="ENOKI" priceScale="1"/>
+        <fillType name="OYSTER" priceScale="1"/>
+        <fillType name="POTATOCHIPS" priceScale="1"/>
+        <fillType name="PRESERVEDCARROTS" priceScale="1"/>
+        <fillType name="PRESERVEDPARSNIP" priceScale="1"/>
+        <fillType name="PRESERVEDBEETROOT" priceScale="1"/>
+        <fillType name="CANNED_PEAS" priceScale="1"/>
+        <fillType name="CEMENTBRICKS" priceScale="1"/>
+        <fillType name="SPINACH_BAGS" priceScale="1"/>
+        <fillType name="JARRED_GREENBEAN" priceScale="1"/>
+        <fillType name="RICE_BAGS" priceScale="1"/>
+        <fillType name="RICE_BOXES" priceScale="1"/>
+        <fillType name="ROOFPLATES" priceScale="1"/>
+        <fillType name="ROPE" priceScale="1"/>
+        <fillType name="GOATMILK" priceScale="1"/>
+        <fillType name="MILK_BOTTLED" priceScale="1"/>
+        <fillType name="GOATMILK_BOTTLED" priceScale="1"/>
+        <fillType name="BUFFALOMILK_BOTTLED" priceScale="1"/>
+        <fillType name="BUFFALOMOZZARELLA" priceScale="1"/>
+        <fillType name="GOATCHEESE" priceScale="1"/>
+        <fillType name="RICEROLLS" priceScale="1"/>
+        <fillType name="FERMENTEDNAPACABBAGE" priceScale="1"/>
+        <fillType name="NOODLESOUP" priceScale="1"/>
+        <fillType name="SOUPCANSMIXED" priceScale="1"/>
+        <fillType name="SOUPCANSCARROTS" priceScale="1"/>
+        <fillType name="SOUPCANSPARSNIP" priceScale="1"/>
+        <fillType name="SOUPCANSBEETROOT" priceScale="1"/>
+        <fillType name="SOUPCANSPOTATO" priceScale="1"/>
+
+        <palletSpawner>
+            <spawnPlaces>
+                <spawnPlace startNode="palletAreaStart01" endNode="palletAreaEnd01" />
+                <spawnPlace startNode="palletAreaStart02" endNode="palletAreaEnd02" />
+            </spawnPlaces>
+        </palletSpawner>
+    </palletBuyingStation>
+
+    <solarPanels>
+        <solarPanelsConfigurations title="$l10n_configuration_size">
+            <solarPanelsConfiguration name="$l10n_configuration_valueSmall" isDefault="true">
+                <objectChange node="clearAreaStart01" translationActive="-2 0 -1" />
+                <objectChange node="clearAreaWidth01" translationActive="4 0 0" />
+                <objectChange node="clearAreaHeight01" translationActive="0 0 2" />
+
+                <objectChange node="testAreaStart01" translationActive="-2 0 -1" />
+                <objectChange node="testAreaEnd01" translationActive="4 2 2" />
+
+                <objectChange node="tipOcclusionUpdateAreaStart01" translationActive="-2 0 -1" />
+                <objectChange node="tipOcclusionUpdateAreaEnd01" translationActive="6 0 2" />
+
+                <objectChange node="palletAreaStart01" translationActive="-2 0 0" />
+                <objectChange node="palletAreaEnd01" translationActive="4 0 0" />
+                <objectChange node="palletAreaStart02" translationActive="0 0 0" />
+                <objectChange node="palletAreaEnd02" translationActive="0.1 0 0" />
+
+                <objectChange node="warningStripesSmall" visibilityActive="true" />
+                <objectChange node="warningStripesMedium" visibilityActive="false" />
+                <objectChange node="warningStripesLarge" visibilityActive="false" />
+            </solarPanelsConfiguration>
+
+            <solarPanelsConfiguration name="$l10n_configuration_valueDefault">
+                <objectChange node="clearAreaStart01" translationActive="-7.5 0 -1.5" />
+                <objectChange node="clearAreaWidth01" translationActive="9.5 0 0" />
+                <objectChange node="clearAreaHeight01" translationActive="0 0 3" />
+
+                <objectChange node="testAreaStart01" translationActive="-7.5 0 -1.5" />
+                <objectChange node="testAreaEnd01" translationActive="9.5 2 3" />
+
+                <objectChange node="tipOcclusionUpdateAreaStart01" translationActive="-7.5 0 -1.5"/>
+                <objectChange node="tipOcclusionUpdateAreaEnd01" translationActive="9.5 0 3"/>
+
+                <objectChange node="palletAreaStart01" translationActive="-6.5 0 0" />
+                <objectChange node="palletAreaEnd01" translationActive="8 0 0" />
+                <objectChange node="palletAreaStart02" translationActive="-6.5 0 0" />
+                <objectChange node="palletAreaEnd02" translationActive="0.1 0 0" />
+
+                <objectChange node="warningStripesSmall" visibilityActive="false" />
+                <objectChange node="warningStripesMedium" visibilityActive="true" />
+                <objectChange node="warningStripesLarge" visibilityActive="false" />
+            </solarPanelsConfiguration>
+
+            <solarPanelsConfiguration name="$l10n_configuration_valueBig">
+                <objectChange node="clearAreaStart01" translationActive="-8 0 -2.5" />
+                <objectChange node="clearAreaWidth01" translationActive="10 0 0" />
+                <objectChange node="clearAreaHeight01" translationActive="0 0 5" />
+
+                <objectChange node="testAreaStart01" translationActive="-8 0 -2.5" />
+                <objectChange node="testAreaEnd01" translationActive="10 2 5" />
+
+                <objectChange node="tipOcclusionUpdateAreaStart01" translationActive="-8 0 -2.5"/>
+                <objectChange node="tipOcclusionUpdateAreaEnd01" translationActive="10 0 5"/>
+
+                <objectChange node="palletAreaStart01" translationActive="-7 0 -2" />
+                <objectChange node="palletAreaEnd01" translationActive="10 0 0" />
+                <objectChange node="palletAreaStart02" translationActive="-7 0 2" />
+                <objectChange node="palletAreaEnd02" translationActive="10 0 0" />
+
+                <objectChange node="warningStripesSmall" visibilityActive="false" />
+                <objectChange node="warningStripesMedium" visibilityActive="false" />
+                <objectChange node="warningStripesLarge" visibilityActive="true" />
+            </solarPanelsConfiguration>
+        </solarPanelsConfigurations>
+    </solarPanels>
+
+    <i3dMappings>
+        <i3dMapping id="farmPalletShop" node="0>" />
+        <i3dMapping id="warningStripesSmall" node="0>0|0|0" />
+        <i3dMapping id="warningStripesMedium" node="0>0|0|1" />
+        <i3dMapping id="warningStripesLarge" node="0>0|0|2" />
+        <i3dMapping id="palletBuyingActivationTrigger" node="0>1|0" />
+        <i3dMapping id="palletBuyingActivationTriggerMarker" node="0>1|1" />
+        <i3dMapping id="clearAreaStart01" node="0>2|0" />
+        <i3dMapping id="clearAreaWidth01" node="0>2|0|0" />
+        <i3dMapping id="clearAreaHeight01" node="0>2|0|1" />
+        <i3dMapping id="testAreaStart01" node="0>3|0" />
+        <i3dMapping id="testAreaEnd01" node="0>3|0|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>4|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>4|0|0" />
+        <i3dMapping id="palletAreaStart01" node="0>5|0" />
+        <i3dMapping id="palletAreaEnd01" node="0>5|0|0" />
+        <i3dMapping id="palletAreaStart02" node="0>5|1" />
+        <i3dMapping id="palletAreaEnd02" node="0>5|1|0" />
+    </i3dMappings>
+</placeable>
