@@ -1,15 +1,22 @@
-# Liftable Pallets and Bales
+# Farm Pallet Shop
 
-All base game pallets, big bags, and bales are now liftable by hand, weighing only 100 kg.
+Place this minimal pallet shop in your farmyard to buy pallets directly at your farm.
+The shop can be configured in 3 sizes: small, standard, and large.
 
-Productions/animal pens will spawn these lightweight pallets after installing this mod. Anything existing before activation will remain original weight.
-All pallets are available for purchase on the warehouse/pallet store on your map.
-Bales and pallets brought through this mod are compatible with (console)autoloaders.
+If you are using a mod like Liftable Pallets and Bales, it will spawn the liftable pallets.
 
-Included are balers and cotton harvesters producing bales weighing only 100 kg, making them liftable by hand! Produced bales can be wrapped and transported by all base game equipment.
-Liftable grass/silage/hay/straw bales in all sizes available for purchase through the shop.
+Farm Pallet Shop
+Category: Tools
+Price: $5000
+Upkeep: $0
+Configurations: Size
 
-This mod will not make pallets, big bags, or bales added by other mods liftable, unless mentioned by this mod.
+Farm Pallet Shop (Free pallets)
+Category: Tools
+Price: $5000
+Upkeep: $0
+Configurations: Size
+
 ## Requirements
 
 - **Farming Simulator Version:** FS25
