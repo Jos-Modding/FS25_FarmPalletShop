@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="96">
+<modDesc descVersion="98">
     <author>Jos</author>
-    <version>1.0.0.0</version>
+    <version>1.0.0.1</version>
     <title>
         <en>Farm Pallet Shop</en>
         <de>Hof Paletten Händler</de>
@@ -9,6 +9,8 @@
     <description>
         <en><![CDATA[Place this minimal pallet shop in your farmyard to buy pallets directly at your farm.
 The shop can be configured in 3 sizes: small, standard, and large.
+
+Pallet price is calculated (by the game) using your economy settings and the current price for the crop.
 
 If you are using a mod like Liftable Pallets and Bales, it will spawn the liftable pallets.
 
@@ -23,10 +25,17 @@ Category: Tools
 Price: $5000
 Upkeep: $0
 Configurations: Size
+
+Latest version and bug reports on <a href="https://github.com/Jos-Modding/FS25_FarmPalletShop">GitHub</a>.
+
+Changelog 1.0.0.1:
+- Reduced pallet prices by 50%
 ]]>
         </en>
         <de><![CDATA[Platziere diesen kleinen Palettenhändler auf deinem Hof, um Paletten direkt auf deinem Hof zu kaufen.
 Der Händler kann in 3 Größen konfiguriert werden: klein, Standard und groß.
+
+Der Palettenpreis wird (vom Spiel) anhand Ihrer Wirtschaftseinstellungen und des aktuellen Preises für die Ernte berechnet.
 
 Wenn du einen Mod wie "Liftable Pallets and Bales" verwendest, wird er die liftbaren Paletten spawnen.
 
@@ -41,6 +50,11 @@ Shopkategorie: Geräte
 Preis: 5.000€
 Unterhaltskosten: 0€
 Konfigurationen: Größe
+
+Aktuelle Version und Fehlerberichte auf <a href="https://github.com/Jos-Modding/FS25_FarmPalletShop">GitHub</a>.
+
+Changelog 1.0.0.1:
+- Reduzierte Palettenpreise um 50%
 ]]>
         </de>
     </description>

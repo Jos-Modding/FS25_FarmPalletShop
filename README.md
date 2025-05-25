@@ -1,7 +1,11 @@
 # Farm Pallet Shop
 
+[Download](https://github.com/Jos-Modding/FS25_FarmPalletShop/releases)
+
 Place this minimal pallet shop in your farmyard to buy pallets directly at your farm.
 The shop can be configured in 3 sizes: small, standard, and large.
+
+Pallet price is calculated (by the game) using your economy settings and the current price for the crop.
 
 If you are using a mod like Liftable Pallets and Bales, it will spawn the liftable pallets.
 
